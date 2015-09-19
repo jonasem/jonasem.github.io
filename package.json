@@ -17,9 +17,14 @@
   },
   "homepage": "https://github.com/jonasem/jonasem.github.io",
   "dependencies": {
-    "material-design-lite": "^1.0.4-2"
+    "gulp-babel": "^5.2.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-sass": "^2.0.4",
+    "material-design-lite": "^1.0.4-2",
+    "react": "^0.13.3"
   },
   "devDependencies": {
-    "babel-core": "^5.8.25"
+    "babel-core": "^5.8.25",
+    "gulp-react": "^3.0.1"
   }
 }
