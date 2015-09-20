@@ -34,14 +34,15 @@
   font-size: 13px; }
 
 #todolist > .container > h3 {
-  padding: 1em 0.5em 0 0.5em; }
+  padding: 1em 0.5em 0 0.5em;
+  margin: 0; }
 
-#todolist > .container .mdl-cell {
+#todolist > .container .itemslist-enter {
+  transform: rotateY(90deg); }
+
+#todolist > .container .itemslist-enter.itemslist-enter-active {
+  transform: rotateY(0deg);
+  transition: transform 0.5s ease-in; }
+
+#todolist > .container .mdl-grid.list-item {
   color: #999; }
-
-.example-enter {
-  opacity: 0.01; }
-
-.example-enter.example-enter-active {
-  opacity: 1;
-  transition: opacity 0.5s ease-in; }

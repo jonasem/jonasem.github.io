@@ -4,21 +4,22 @@
 
     & > h3 {
       padding: 1em 0.5em 0 0.5em;
+      margin: 0;
     }
 
-    & .mdl-cell {
-      color: #999;
+    & .itemslist-enter {
+      transform: rotateY(90deg);
+    }
 
+    & .itemslist-enter.itemslist-enter-active {
+      transform: rotateY(0deg);
+      transition: transform .5s ease-in;
+    }
+
+    & .mdl-grid.list-item {
+      color: #999;
     }
     
   }
 }
 
-.example-enter {
-  opacity: 0.01;
-}
-
-.example-enter.example-enter-active {
-  opacity: 1;
-  transition: opacity .5s ease-in;
-}

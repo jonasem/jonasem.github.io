@@ -59,14 +59,14 @@ var TodoListItems = (function (_React$Component) {
   _createClass(TodoListItems, [{
     key: "item",
     value: function item(text, index) {
-      return React.createElement("div", { key: index, className: "mdl-cell mdl-cell--12-col" }, text);
+      return React.createElement("div", { key: index, className: "mdl-grid list-item mdl-color--white" }, React.createElement("div", { className: "mdl-cell mdl-cell--12-col" }, text));
     }
   }, {
     key: "render",
     value: function render() {
       var items = this.props.items.map(this.item);
 
-      return React.createElement("div", { className: "mdl-grid" }, React.createElement(Transition, { transitionName: "example" }, items));
+      return React.createElement(Transition, { transitionName: "itemslist" }, items);
     }
   }]);
 
@@ -99,7 +99,7 @@ var TodoApp = (function (_React$Component2) {
   }, {
     key: "render",
     value: function render() {
-      return React.createElement("div", { className: "mdl-color--white container" }, React.createElement("h3", null, "TODO"), React.createElement(TodoListItems, { items: this.state.items }), React.createElement("form", { onSubmit: this.handleSubmit.bind(this), className: "mdl-grid" }, React.createElement("div", { className: "mdl-textfield mdl-js-textfield mdl-grid--12-col" }, React.createElement("input", { onChange: this.onChange.bind(this),
+      return React.createElement("div", { className: "container" }, React.createElement("h3", { className: "mdl-color--white" }, "TODO"), React.createElement(TodoListItems, { items: this.state.items }), React.createElement("form", { onSubmit: this.handleSubmit.bind(this), className: "mdl-grid" }, React.createElement("div", { className: "mdl-textfield mdl-js-textfield mdl-cell--12-col" }, React.createElement("input", { onChange: this.onChange.bind(this),
         value: this.state.text,
         className: "mdl-textfield__input", id: "sample1" }), React.createElement("label", { className: "mdl-textfield__label", "for": "sample1" }, "Text..."))));
     }
