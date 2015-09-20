@@ -10,7 +10,11 @@ export class Counter extends React.Component {
   }
   render() {
     return (
-      <div onClick={this.tick.bind(this)}>
+
+      <div>
+      	<button onClick={this.tick.bind(this)} className="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+		  <i className="material-icons">add</i>
+		</button>
         Clicks: {this.state.count}
       </div>
     );

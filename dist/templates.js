@@ -28,7 +28,7 @@ var Counter = (function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
-      return React.createElement("div", { onClick: this.tick.bind(this) }, "Clicks: ", this.state.count);
+      return React.createElement("div", null, React.createElement("button", { onClick: this.tick.bind(this), className: "mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" }, React.createElement("i", { className: "material-icons" }, "add")), "Clicks: ", this.state.count);
     }
   }]);
 

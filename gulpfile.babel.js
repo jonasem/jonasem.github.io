@@ -35,7 +35,7 @@ gulp.task('scripts', () => {
 gulp.task('vendor', () => {	
 	let scripts = [
 		'node_modules/material-design-lite/material.min.js', 
-		'node_modules/react/dist/react.min.js']
+		'node_modules/react/dist/react-with-addons.min.js']
 	let styles = [
 		'node_modules/material-design-lite/material.min.css'
 	]
