@@ -27,7 +27,7 @@ gulp.task('scripts', () => {
 
 	gulp.src(paths.templates)
 		.pipe(react({harmony: false, es6module: true}))
-		.pipe(babel({modules: 'ignore'}))
+		.pipe(babel({modules: 'ignore', stage: 0}))
 		.pipe(concat('templates.js'))
 		.pipe(gulp.dest('dist'))	
 });

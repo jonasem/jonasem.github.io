@@ -1,5 +1,3 @@
-let mountNode = document.getElementById('container')
-
 export class Counter extends React.Component {
   constructor(props) {
     super(props);
@@ -22,5 +20,3 @@ export class Counter extends React.Component {
 }
 Counter.propTypes = { initialCount: React.PropTypes.number };
 Counter.defaultProps = { initialCount: 0 };
-
-React.render(<Counter />, mountNode);

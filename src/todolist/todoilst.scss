@@ -1,0 +1,24 @@
+#todolist {
+
+  & > .container {
+
+    & > h3 {
+      padding: 1em 0.5em 0 0.5em;
+    }
+
+    & .mdl-cell {
+      color: #999;
+
+    }
+    
+  }
+}
+
+.example-enter {
+  opacity: 0.01;
+}
+
+.example-enter.example-enter-active {
+  opacity: 1;
+  transition: opacity .5s ease-in;
+}
